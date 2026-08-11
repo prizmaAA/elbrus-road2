@@ -95,17 +95,16 @@
       </div>
     </header>
 
-    <!-- 2. Hero Section (Базовая высота скрина 2 + поднятый текст + свободное пространство над кнопками) -->
-    <section class="relative bg-[#0b0f19] min-h-[500px] sm:min-h-[600px] lg:min-h-[750px] flex flex-col justify-between overflow-hidden" id="hero">
+    <!-- 2. Hero Section (Строгая обрезка фото ровно под кнопками) -->
+    <section class="relative bg-[#0b0f19] overflow-hidden lg:min-h-[750px] lg:flex lg:flex-col lg:justify-between" id="hero">
       <div id="hero-bg-1" class="absolute inset-0 bg-no-repeat bg-cover bg-bottom lg:bg-[position:80%_center] transition-opacity duration-1000 ease-in-out opacity-100 z-0" style="background-image: url('./images/hero-1.jpg');"></div>
       <div id="hero-bg-2" class="absolute inset-0 bg-no-repeat bg-cover bg-bottom lg:bg-[position:80%_center] transition-opacity duration-1000 ease-in-out opacity-0 z-0" style="background-image: url('./images/hero-2.jpg');"></div>
       <div id="hero-bg-3" class="absolute inset-0 bg-no-repeat bg-cover bg-bottom lg:bg-[position:80%_center] transition-opacity duration-1000 ease-in-out opacity-0 z-0" style="background-image: url('./images/kamaz-truck.jpg');"></div>
 
       <div class="absolute inset-0 bg-gradient-to-b lg:bg-gradient-to-r from-[#0b0f19] via-[#0b0f19]/95 via-25% to-transparent z-1"></div>
 
-      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pt-5 pb-8 sm:py-20 lg:py-32 w-full text-white flex-1 flex flex-col justify-between">
-        <!-- Верхний блок: Заголовок и подзаголовок приподняты к верху -->
-        <div class="max-w-2xl text-left flex flex-col items-start pt-1 sm:pt-0">
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pt-6 pb-6 sm:py-20 lg:py-32 w-full text-white">
+        <div class="max-w-2xl text-left flex flex-col items-start mb-6 lg:mb-12">
           <h1 class="text-2xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight mb-3 sm:mb-6 text-white text-left">
             Асфальтирование под ключ<br><span class="text-emerald-400">в Курганской области</span>
           </h1>
@@ -117,8 +116,7 @@
           </p>
         </div>
 
-        <!-- Нижний блок: Кнопки на комфортной высоте снизу кадра -->
-        <div class="pt-6 w-full sm:w-auto">
+        <div class="w-full sm:w-auto">
           <div class="flex flex-row items-center justify-start space-x-2.5 sm:space-x-5 w-full sm:w-auto">
             <a href="#services" class="w-1/2 sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-[10px] sm:text-xs uppercase tracking-wider py-3 sm:px-8 sm:py-4 rounded-lg transition-all shadow-md active:scale-[0.98] text-center flex items-center justify-center space-x-1.5 whitespace-nowrap">
               <span>НАШИ УСЛУГИ</span>
