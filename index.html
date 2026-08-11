@@ -42,7 +42,7 @@
     <header class="sticky top-0 w-full left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md py-3.5 border-b border-gray-100" id="main-header">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center">
         <!-- Logo block -->
-        <a href="#hero" class="flex items-center space-x-3 group cursor-pointer">
+        <a onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" class="flex items-center space-x-3 group cursor-pointer">
           <img src="./images/logo.svg" alt="ООО «ЭЛЬБРУС»" class="h-9 sm:h-10 w-auto object-contain transition-transform group-hover:scale-[1.02]">
           <span class="text-lg sm:text-xl font-black tracking-tight text-emerald-600 group-hover:text-emerald-700 transition-colors leading-none">
             ЭЛЬБРУС
@@ -61,15 +61,15 @@
         <!-- Right Side Phone Button -->
         <div class="hidden sm:flex items-center space-x-4">
           <a href="tel:+73522550476" class="bg-emerald-600 text-white font-bold text-xs tracking-wider uppercase px-4 py-2.5 rounded-lg hover:bg-emerald-700 active:scale-[0.98] transition-all shadow-sm flex items-center space-x-2 whitespace-nowrap">
-            <svg class="w-3.5 h-3.5 text-white shrink-0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 .8.7A2 2 0 0 1 22 16.92z"/></svg>
+            <svg class="w-3.5 h-3.5 fill-current text-white shrink-0" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.27c1.21.49 2.53.76 3.88.76a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.35.27 2.67.76 3.88a1 1 0 01-.27 1.11l-2.2 2.2z"/></svg>
             <span>+7 (3522) 55-04-76</span>
           </a>
         </div>
 
-        <!-- Mobile Quick Call + Hamburger -->
-        <div class="flex items-center space-x-1 lg:hidden">
-          <a href="tel:+73522550476" class="p-2 text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all cursor-pointer" aria-label="Позвонить">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 .8.7A2 2 0 0 1 22 16.92z"/></svg>
+        <!-- Mobile Quick Call (Закрашенная трубка) + Hamburger -->
+        <div class="flex items-center space-x-1.5 lg:hidden">
+          <a href="tel:+73522550476" class="p-2.5 bg-emerald-50 text-emerald-600 hover:bg-emerald-100 rounded-lg transition-all cursor-pointer flex items-center justify-center" aria-label="Позвонить">
+            <svg class="w-4 h-4 fill-emerald-600 text-emerald-600" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.27c1.21.49 2.53.76 3.88.76a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.35.27 2.67.76 3.88a1 1 0 01-.27 1.11l-2.2 2.2z"/></svg>
           </a>
           <button id="mobile-menu-toggle" class="p-2 text-gray-700 hover:text-emerald-600 rounded-lg hover:bg-gray-100 transition-all cursor-pointer" aria-label="Toggle Menu">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" id="hamburger-icon"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
@@ -88,14 +88,14 @@
         </div>
         <div class="pt-4 border-t border-gray-100 space-y-4">
           <a href="tel:+73522550476" class="mobile-nav-link flex items-center justify-center space-x-3 w-full bg-emerald-600 text-white font-bold text-sm text-center py-3 rounded-lg hover:bg-emerald-700 transition-colors shadow-md whitespace-nowrap">
-            <svg class="w-5 h-5 text-white shrink-0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 .8.7A2 2 0 0 1 22 16.92z"/></svg>
+            <svg class="w-5 h-5 fill-current text-white shrink-0" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.27c1.21.49 2.53.76 3.88.76a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.35.27 2.67.76 3.88a1 1 0 01-.27 1.11l-2.2 2.2z"/></svg>
             <span>+7 (3522) 55-04-76</span>
           </a>
         </div>
       </div>
     </header>
 
-    <!-- 2. Hero Section (Раздельный четкий мобильный макет) -->
+    <!-- 2. Hero Section (Компактный мобильный макет без рамок) -->
     <section class="relative bg-slate-900 lg:bg-[#0b0f19] lg:min-h-[720px] sm:lg:min-h-[800px] flex items-center overflow-hidden" id="hero">
       <!-- Desktop Dynamic Background Slider -->
       <div class="hidden lg:block absolute inset-0 z-0">
@@ -105,28 +105,29 @@
         <div class="absolute inset-0 bg-gradient-to-r from-[#0b0f19]/95 via-[#0b0f19]/75 to-transparent"></div>
       </div>
 
-      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-10 lg:py-36 w-full text-white">
-        <div class="max-w-2xl text-left flex flex-col items-start">
-          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight mb-4 lg:mb-6 text-white text-left">
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pt-6 pb-0 lg:py-36 w-full text-white">
+        <div class="max-w-2xl flex flex-col items-center sm:items-start text-center sm:text-left">
+          <h1 class="text-2xl sm:text-5xl lg:text-6xl font-bold sm:font-black tracking-tight leading-tight mb-2.5 lg:mb-6 text-white">
             Асфальтирование под ключ в <span class="text-emerald-400">Курганской области</span>
           </h1>
 
-          <p class="text-sm sm:text-lg lg:text-xl text-gray-200 font-medium leading-relaxed mb-6 lg:mb-10 max-w-xl text-left">
+          <p class="text-xs sm:text-lg lg:text-xl text-gray-200 font-medium leading-relaxed mb-4 lg:mb-10 max-w-xl">
             Строительство и капитальный ремонт дорог, асфальтирование и благоустройство территорий по стандартам ГОСТ. Собственный парк техники.
           </p>
 
-          <div class="flex flex-col sm:flex-row items-center justify-start space-y-3 sm:space-y-0 sm:space-x-5 w-full sm:w-auto mb-6 lg:mb-0">
-            <a href="#services" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs uppercase tracking-wider px-8 py-3.5 sm:py-4 rounded-lg transition-all shadow-md active:scale-[0.98] text-center flex items-center justify-center space-x-2 w-full sm:w-auto">
+          <!-- Кнопки в одну строчку на мобильном -->
+          <div class="flex flex-row items-center justify-center sm:justify-start space-x-2.5 sm:space-x-5 w-full mb-4 lg:mb-0">
+            <a href="#services" class="w-1/2 sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-[10px] sm:text-xs uppercase tracking-wider py-2.5 sm:px-8 sm:py-4 rounded-lg transition-all shadow-md active:scale-[0.98] text-center flex items-center justify-center space-x-1 whitespace-nowrap">
               <span>НАШИ УСЛУГИ</span>
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              <svg class="w-3.5 h-3.5 hidden sm:inline" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
             </a>
-            <a href="#objects" class="bg-white/10 hover:bg-white/20 text-white border border-white/20 font-bold text-xs uppercase tracking-wider px-8 py-3.5 sm:py-4 rounded-lg transition-all backdrop-blur-md active:scale-[0.98] text-center w-full sm:w-auto block">
+            <a href="#objects" class="w-1/2 sm:w-auto bg-white/10 hover:bg-white/20 text-white border border-white/20 font-bold text-[10px] sm:text-xs uppercase tracking-wider py-2.5 sm:px-8 sm:py-4 rounded-lg transition-all backdrop-blur-md active:scale-[0.98] text-center whitespace-nowrap block">
               ПРИМЕРЫ РАБОТ
             </a>
           </div>
 
-          <!-- Dedicated Mobile Slider Banner Below Text -->
-          <div class="block lg:hidden w-full relative aspect-[16/9] rounded-xl overflow-hidden border border-white/10 shadow-lg mt-2">
+          <!-- Безрамочное фото во всю ширину экрана для мобильного -->
+          <div class="block lg:hidden -mx-4 w-[calc(100%+2rem)] relative aspect-[16/9] overflow-hidden mt-1">
             <div id="hero-mobile-bg-1" class="absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-100" style="background-image: url('./images/hero-1.jpg');"></div>
             <div id="hero-mobile-bg-2" class="absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('./images/hero-2.jpg');"></div>
             <div id="hero-mobile-bg-3" class="absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('./images/kamaz-truck.jpg');"></div>
@@ -255,14 +256,14 @@
           </div>
         </div>
 
-        <!-- Mobile View (Accordion - Изначально полностью закрыт) -->
+        <!-- Mobile View (Accordion - Полностью закрыт на старте) -->
         <div class="lg:hidden space-y-3" id="services-mobile-accordion">
           <!-- Rendered via Javascript -->
         </div>
       </div>
     </section>
 
-    <!-- 6. Contacts Section (С интерактивной картой Яндекс) -->
+    <!-- 6. Contacts Section (С интерактивной картой) -->
     <section class="py-16 sm:py-20 bg-slate-50 border-t border-slate-200/60" id="contacts">
       <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="mb-10">
@@ -325,7 +326,7 @@
 
             <div class="pt-4 border-t border-slate-100">
               <a href="tel:+73522550476" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs uppercase tracking-wider py-3.5 rounded-lg transition-all shadow-sm flex items-center justify-center space-x-2">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 .8.7A2 2 0 0 1 22 16.92z"/></svg>
+                <svg class="w-4 h-4 fill-current text-white" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.27c1.21.49 2.53.76 3.88.76a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.35.27 2.67.76 3.88a1 1 0 01-.27 1.11l-2.2 2.2z"/></svg>
                 <span>СВЯЗАТЬСЯ С НАМИ</span>
               </a>
             </div>
@@ -457,10 +458,10 @@
 
     <!-- 9. Fixed Bottom Navigation Bar for Mobile -->
     <nav class="fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-gray-200 lg:hidden py-2 px-2 shadow-[0_-4px_12px_rgba(0,0,0,0.05)] flex justify-around items-center">
-      <a href="#hero" class="flex flex-col items-center text-gray-600 hover:text-emerald-600 transition-colors py-1 px-2">
+      <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" class="flex flex-col items-center text-gray-600 hover:text-emerald-600 transition-colors py-1 px-2 cursor-pointer">
         <svg class="w-5 h-5 mb-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
         <span class="text-[10px] font-bold">Главная</span>
-      </a>
+      </button>
       <a href="#about" class="flex flex-col items-center text-gray-600 hover:text-emerald-600 transition-colors py-1 px-2">
         <svg class="w-5 h-5 mb-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
         <span class="text-[10px] font-bold">Компания</span>
@@ -486,6 +487,11 @@
 
     <!-- Script assets, Catalog data, and interaction loops -->
     <script>
+      // Сброс позиционирования при загрузке
+      if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+      }
+
       // 1. Database catalogs
       const requisites = {
         name: 'ООО "ЭЛЬБРУС"',
@@ -538,7 +544,7 @@
         }
       ];
 
-      // Services Database Catalog (5 Specific Services)
+      // Services Database Catalog
       const servicesData = [
         {
           id: 'road-construction',
@@ -607,13 +613,11 @@
         }
       ];
 
-      // Background Image Auto-Slider logic (Desktop & Mobile)
+      // Background Image Auto-Slider logic
       let currentHeroBgIndex = 1;
       const totalHeroBgs = 3;
       setInterval(() => {
-        // Desktop elements
         const bgPrev = document.getElementById(`hero-bg-${currentHeroBgIndex}`);
-        // Mobile elements
         const bgMobPrev = document.getElementById(`hero-mobile-bg-${currentHeroBgIndex}`);
         
         currentHeroBgIndex = (currentHeroBgIndex % totalHeroBgs) + 1;
@@ -647,7 +651,6 @@
           header.classList.add('bg-white/95', 'backdrop-blur-md', 'py-4');
         }
 
-        // Section Highlighters
         const sections = ['hero', 'objects', 'about', 'services', 'contacts', 'requisites', 'footer'];
         const scrollPosition = window.scrollY + 120;
         sections.forEach(sec => {
@@ -704,9 +707,9 @@
         `).join('');
       }
 
-      // Services renderer (Desktop list/detail + Mobile Accordion)
+      // Services renderer
       let activeServiceIndex = 0;
-      let activeMobileAccordionIndex = -1; // -1 чтобы все элементы были изначально закрыты на мобильном
+      let activeMobileAccordionIndex = -1;
 
       function selectService(index) {
         activeServiceIndex = index;
@@ -723,7 +726,6 @@
         const detailEl = document.getElementById('services-desktop-detail');
         const activeService = servicesData[activeServiceIndex];
 
-        // Render Left List Buttons
         listEl.innerHTML = servicesData.map((s, idx) => {
           const isActive = idx === activeServiceIndex;
           return `
@@ -738,7 +740,6 @@
           `;
         }).join('');
 
-        // Render Right Detail Box
         detailEl.innerHTML = `
           <div class="space-y-6">
             <div>
@@ -869,7 +870,7 @@
         URL.revokeObjectURL(link.href);
       }
 
-      // Modal management functions
+      // Modal management
       const modal = document.getElementById('modal-container');
       
       function toggleModal(state, contentHtml = '') {
@@ -924,8 +925,9 @@
         `);
       }
 
-      // 3. Initial loaders setup onload
+      // Initial loaders
       window.onload = () => {
+        window.scrollTo(0, 0);
         renderProjects();
         renderDesktopServices();
         renderMobileServices();
