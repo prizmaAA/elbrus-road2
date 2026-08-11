@@ -34,33 +34,6 @@
   </head>
   <body class="min-h-screen bg-slate-50 text-gray-800 flex flex-col selection-emerald overflow-x-hidden">
 
-    <!-- 0. Utility Upper bar -->
-    <div class="bg-gray-950 text-gray-400 text-xs py-2 px-4 border-b border-gray-800 hidden md:block">
-      <div class="max-w-7xl mx-auto flex justify-between items-center">
-        <div class="flex items-center space-x-6">
-          <span class="text-[10px] tracking-wider uppercase text-emerald-400 font-semibold font-mono">
-            Официальный сайт • ИНН 4501194763
-          </span>
-          <span class="text-gray-500">|</span>
-          <span class="hover:text-white transition-colors duration-200">Курганская область</span>
-        </div>
-        <div class="flex items-center space-x-6">
-          <a href="https://vk.com" target="_blank" rel="noreferrer" class="hover:text-emerald-400 transition-colors duration-200">
-            VK
-          </a>
-          <a href="https://t.me" target="_blank" rel="noreferrer" class="hover:text-emerald-400 transition-colors duration-200">
-            Telegram
-          </a>
-          <span class="text-gray-500">|</span>
-          <a href="tel:+73522411010" class="text-gray-300 font-medium hover:text-white transition-colors flex items-center space-x-1.5">
-            <!-- Inline SVG Phone -->
-            <svg class="w-3.5 h-3.5 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 .8.7A2 2 0 0 1 22 16.92z"/></svg>
-            <span>+7 (3522) 41-10-10</span>
-          </a>
-        </div>
-      </div>
-    </div>
-
     <!-- 1. Sticky Navigation Header -->
     <header class="sticky top-0 w-full left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md py-5 border-b border-gray-100" id="main-header">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center">
@@ -91,13 +64,14 @@
           <a href="#news" class="nav-link px-4 py-2 rounded-lg text-xs font-bold tracking-wider transition-all uppercase text-gray-700 hover:text-emerald-600 hover:bg-gray-50">НОВОСТИ</a>
           <a href="#vacancies" class="nav-link px-4 py-2 rounded-lg text-xs font-bold tracking-wider transition-all uppercase text-gray-700 hover:text-emerald-600 hover:bg-gray-50">ВАКАНСИИ</a>
           <a href="#requisites" class="nav-link px-4 py-2 rounded-lg text-xs font-bold tracking-wider transition-all uppercase text-gray-700 hover:text-emerald-600 hover:bg-gray-50">РЕКВИЗИТЫ</a>
-          <a href="#contacts" class="nav-link px-4 py-2 rounded-lg text-xs font-bold tracking-wider transition-all uppercase text-gray-700 hover:text-emerald-600 hover:bg-gray-50">КОНТАКТЫ</a>
+          <a href="#footer" class="nav-link px-4 py-2 rounded-lg text-xs font-bold tracking-wider transition-all uppercase text-gray-700 hover:text-emerald-600 hover:bg-gray-50">КОНТАКТЫ</a>
         </nav>
 
-        <!-- Right Side button -->
+        <!-- Right Side Phone Button -->
         <div class="hidden sm:flex items-center space-x-4">
-          <a href="#contacts" class="bg-emerald-600 text-white font-bold text-xs tracking-wider uppercase px-5 py-3 rounded-lg hover:bg-emerald-700 active:scale-[0.98] transition-all shadow-sm shadow-emerald-600/10">
-            ОСТАВИТЬ ЗАЯВКУ
+          <a href="tel:+73522550476" class="bg-emerald-600 text-white font-bold text-xs tracking-wider uppercase px-5 py-3 rounded-lg hover:bg-emerald-700 active:scale-[0.98] transition-all shadow-sm shadow-emerald-600/10 flex items-center space-x-2">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 0 2.11-.45 12.84 12.84 0 0 0 .8.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>ПОЗВОНИТЬ: +7 (3522) 55-04-76</span>
           </a>
         </div>
 
@@ -115,15 +89,12 @@
           <a href="#news" class="mobile-nav-link w-full text-left py-3 px-4 rounded-lg font-bold text-sm tracking-wide text-gray-700 hover:text-emerald-600 hover:bg-gray-50 block">НОВОСТИ</a>
           <a href="#vacancies" class="mobile-nav-link w-full text-left py-3 px-4 rounded-lg font-bold text-sm tracking-wide text-gray-700 hover:text-emerald-600 hover:bg-gray-50 block">ВАКАНСИИ</a>
           <a href="#requisites" class="mobile-nav-link w-full text-left py-3 px-4 rounded-lg font-bold text-sm tracking-wide text-gray-700 hover:text-emerald-600 hover:bg-gray-50 block">РЕКВИЗИТЫ</a>
-          <a href="#contacts" class="mobile-nav-link w-full text-left py-3 px-4 rounded-lg font-bold text-sm tracking-wide text-gray-700 hover:text-emerald-600 hover:bg-gray-50 block">КОНТАКТЫ</a>
+          <a href="#footer" class="mobile-nav-link w-full text-left py-3 px-4 rounded-lg font-bold text-sm tracking-wide text-gray-700 hover:text-emerald-600 hover:bg-gray-50 block">КОНТАКТЫ</a>
         </div>
         <div class="pt-4 border-t border-gray-100 space-y-4">
-          <a href="tel:+73522411010" class="flex items-center space-x-3 text-gray-800 font-bold text-sm hover:text-emerald-600 transition-colors px-4 py-2">
-            <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 .8.7A2 2 0 0 1 22 16.92z"/></svg>
-            <span>+7 (3522) 41-10-10</span>
-          </a>
-          <a href="#contacts" class="mobile-nav-link block w-full bg-emerald-600 text-white font-bold text-sm text-center py-3.5 rounded-lg hover:bg-emerald-700 transition-colors shadow-md">
-            ОСТАВИТЬ ЗАЯВКУ
+          <a href="tel:+73522550476" class="mobile-nav-link flex items-center justify-center space-x-3 w-full bg-emerald-600 text-white font-bold text-sm text-center py-3.5 rounded-lg hover:bg-emerald-700 transition-colors shadow-md">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 .8.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>ПОЗВОНИТЬ: +7 (3522) 55-04-76</span>
           </a>
         </div>
       </div>
@@ -158,8 +129,9 @@
               <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
               <span>НАШИ ОБЪЕКТЫ</span>
             </a>
-            <a href="#contacts" class="bg-zinc-800/90 hover:bg-zinc-700/90 text-white border border-zinc-700 font-bold text-sm uppercase tracking-wider px-8 py-4 rounded-xl transition-all backdrop-blur-sm active:scale-[0.98] text-center w-full sm:w-auto block">
-              ОБСУДИТЬ ПРОЕКТ
+            <a href="tel:+73522550476" class="bg-zinc-800/90 hover:bg-zinc-700/90 text-white border border-zinc-700 font-bold text-sm uppercase tracking-wider px-8 py-4 rounded-xl transition-all backdrop-blur-sm active:scale-[0.98] text-center w-full sm:w-auto flex items-center justify-center space-x-2">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 .8.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>ПОЗВОНИТЬ НАМ</span>
             </a>
           </div>
 
@@ -321,7 +293,7 @@
       </div>
     </section>
 
-    <!-- 5. News Section (Dynamic Popup modals) -->
+    <!-- 5. News Section -->
     <section class="py-24 bg-white" id="news">
       <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="mb-16">
@@ -420,108 +392,7 @@
       </div>
     </section>
 
-    <!-- 8. Callback Submission Form with CRM responses -->
-    <section class="py-24 bg-slate-50 border-t border-slate-100 relative overflow-hidden" id="contacts">
-      <div class="absolute inset-0 z-0 pointer-events-none">
-        <div class="absolute top-0 right-0 w-80 h-80 bg-emerald-100/30 rounded-full filter blur-3xl"></div>
-        <div class="absolute bottom-0 left-0 w-80 h-80 bg-emerald-50/20 rounded-full filter blur-3xl"></div>
-      </div>
-
-      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          <!-- Text prompts block -->
-          <div class="lg:col-span-6 space-y-6">
-            <span class="text-emerald-600 font-mono text-xs uppercase tracking-widest font-bold block">СВЯЗАТЬСЯ С НАМИ</span>
-            <h2 class="text-3xl sm:text-4xl font-black text-gray-950 tracking-tight leading-tight">Оставьте заявку</h2>
-            <p class="text-sm sm:text-base text-gray-600 leading-relaxed max-w-xl">
-              Обсудим ваши задачи, найдем оптимальное экономическое решение, запланируем работы и ответим на любые вопросы. Будем на связи!
-            </p>
-
-            <div class="space-y-4 pt-6 border-t border-slate-200 text-xs sm:text-sm text-gray-600">
-              <div class="flex items-center space-x-3">
-                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 shrink-0"></span>
-                <span>Оперативный ответ ответственного специалиста в течение 15 минут</span>
-              </div>
-              <div class="flex items-center space-x-3">
-                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 shrink-0"></span>
-                <span>Бесплатный выезд квалифицированного мастера для замера по Кургану</span>
-              </div>
-              <div class="flex items-center space-x-3">
-                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 shrink-0"></span>
-                <span>Полный сметный расчет стоимости на дорожные работы</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- CRM Contact Box -->
-          <div class="lg:col-span-6 bg-white border border-slate-200/50 rounded-2xl p-6 sm:p-10 shadow-lg shadow-gray-200/40" id="crm-form-container">
-            <form onsubmit="handleFormSubmit(event)" class="space-y-6" id="callback-landing-form">
-              <!-- Vacancy state banner indicator placeholder -->
-              <div id="vacancy-alert-box" class="hidden bg-emerald-50 border border-emerald-100 rounded-xl p-4 flex items-center justify-between text-xs text-emerald-800">
-                <div>
-                  <span>Отклик на вакансию: </span>
-                  <strong id="vacancy-alert-name" class="font-bold">Менеджер</strong>
-                </div>
-                <button type="button" onclick="clearSelectedVacancy()" class="p-1 hover:bg-emerald-100 rounded-full text-emerald-800 cursor-pointer">
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-                </button>
-              </div>
-
-              <!-- Name -->
-              <div class="space-y-1.5">
-                <label for="callback-name" class="text-xs font-bold text-gray-700 block uppercase tracking-wider">Ваше имя <span class="text-red-500">*</span></label>
-                <input id="callback-name" type="text" required placeholder="Например, Александр" class="w-full bg-slate-50 border border-slate-200 focus:border-emerald-600 focus:bg-white rounded-xl py-3 px-4 text-sm text-gray-950 font-medium outline-none transition-all" />
-              </div>
-
-              <!-- Phone -->
-              <div class="space-y-1.5">
-                <label for="callback-phone" class="text-xs font-bold text-gray-700 block uppercase tracking-wider">Телефон <span class="text-red-500">*</span></label>
-                <input id="callback-phone" type="tel" required placeholder="+7 (3522) 00-00-00" class="w-full bg-slate-50 border border-slate-200 focus:border-emerald-600 focus:bg-white rounded-xl py-3 px-4 text-sm text-gray-950 font-medium outline-none transition-all" />
-              </div>
-
-              <!-- Interest category -->
-              <div class="space-y-1.5">
-                <label for="callback-interest" class="text-xs font-bold text-gray-700 block uppercase tracking-wider">Тип услуги / Интерес</label>
-                <select id="callback-interest" class="w-full bg-slate-50 border border-slate-200 focus:border-emerald-600 focus:bg-white rounded-xl py-3 px-4 text-sm text-gray-950 font-medium outline-none transition-all">
-                  <option value="дорожное" selected>Дорожные работы / Укладка асфальта</option>
-                  <option value="благоустройство">Благоустройство территорий / Плитка</option>
-                  <option value="земляные">Разработка грунтов / Земляные работы</option>
-                  <option value="карьера">Устройство на работу / Карьера</option>
-                  <option value="другое">Другое / Консультация руководителя</option>
-                </select>
-              </div>
-
-              <!-- Comments -->
-              <div class="space-y-1.5">
-                <label for="callback-comment" class="text-xs font-bold text-gray-700 block uppercase tracking-wider">Комментарий (необязательно)</label>
-                <textarea id="callback-comment" rows="3" placeholder="Расскажите вкратце о вашем объекте или укажите удобное время для звонка..." class="w-full bg-slate-50 border border-slate-200 focus:border-emerald-600 focus:bg-white rounded-xl py-3 px-4 text-sm text-gray-950 font-medium outline-none transition-all placeholder-gray-400 resize-none"></textarea>
-              </div>
-
-              <!-- Term agreements -->
-              <div class="flex items-start space-x-3">
-                <input id="callback-agree" type="checkbox" checked required class="mt-1 w-4 h-4 rounded border-gray-300 text-emerald-600 focus:ring-emerald-500 cursor-pointer" />
-                <label for="callback-agree" class="text-xs text-gray-500 leading-normal select-none cursor-pointer">
-                  Я согласен с политикой конфиденциальности и даю согласие на обработку персональных данных.
-                </label>
-              </div>
-
-              <!-- Submit error banners alerts -->
-              <div id="callback-error-banner" class="hidden bg-red-50 border border-red-100 text-red-800 p-3.5 rounded-xl text-xs flex items-center space-x-2">
-                <span id="callback-error-message">Заполните обязательные поля.</span>
-              </div>
-
-              <!-- Trigger Submit -->
-              <button id="callback-submit-btn" type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 disabled:bg-emerald-400 text-white font-bold text-xs uppercase tracking-wider py-4 rounded-xl transition-all shadow-md active:scale-[0.98] cursor-pointer flex items-center justify-center space-x-2">
-                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
-                <span id="submit-btn-text">Отправить заявку</span>
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 9. Footer Section links -->
+    <!-- 8. Footer Section links -->
     <footer class="bg-emerald-600 text-white pt-20 pb-8 relative z-10" id="footer">
       <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-16 border-b border-white/20">
@@ -551,9 +422,9 @@
           </div>
 
           <div class="space-y-4">
-            <h4 class="text-sm font-black uppercase tracking-wider text-emerald-100">Обратная связь</h4>
+            <h4 class="text-sm font-black uppercase tracking-wider text-emerald-100">Связь</h4>
             <ul class="space-y-2.5 text-xs font-semibold text-white/90">
-              <li><a href="#contacts" class="hover:text-emerald-200 transition-colors">Оставить заявку</a></li>
+              <li><a href="tel:+73522550476" class="hover:text-emerald-200 transition-colors">Позвонить нам</a></li>
             </ul>
           </div>
 
@@ -561,9 +432,9 @@
             <h4 class="text-sm font-black uppercase tracking-wider text-emerald-100">Контакты</h4>
             <ul class="space-y-3.5 text-xs">
               <li>
-                <a href="tel:+73522411010" class="flex items-center space-x-2.5 text-white hover:text-emerald-200 transition-colors font-bold font-mono">
+                <a href="tel:+73522550476" class="flex items-center space-x-2.5 text-white hover:text-emerald-200 transition-colors font-bold font-mono">
                   <svg class="w-4 h-4 text-emerald-150 shrink-0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 .8.7A2 2 0 0 1 22 16.92z"/></svg>
-                  <span>+7 (3522) 41-10-10</span>
+                  <span>+7 (3522) 55-04-76</span>
                 </a>
               </li>
               <li>
@@ -769,7 +640,7 @@
         }
 
         // Section Highlighters
-        const sections = ['hero', 'about', 'objects', 'news', 'vacancies', 'requisites', 'contacts'];
+        const sections = ['hero', 'about', 'objects', 'news', 'vacancies', 'requisites', 'footer'];
         const scrollPosition = window.scrollY + 120;
         sections.forEach(sec => {
           const el = document.getElementById(sec);
@@ -921,8 +792,8 @@
               <div class="pt-8 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4">
                 <span class="text-xs text-gray-500 font-medium">Условия: Официальное трудоустройство, своевременная выплата з/п, обеспечение спецодеждой.</span>
                 <button onclick="applyForVacancy('${v.title}')" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs uppercase tracking-wider px-6 py-3 rounded-lg transition-all active:scale-[0.98] w-full sm:w-auto text-center flex items-center justify-center space-x-2.5 cursor-pointer">
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></svg>
-                  <span>ОТКЛИКНУТЬСЯ</span>
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 .8.7A2 2 0 0 1 22 16.92z"/></svg>
+                  <span>ПОЗВОНИТЬ В ОТДЕЛ КАДРОВ</span>
                 </button>
               </div>
             </div>
@@ -943,15 +814,7 @@
       }
 
       function applyForVacancy(title) {
-        document.getElementById('vacancy-alert-box').classList.remove('hidden');
-        document.getElementById('vacancy-alert-name').innerText = title;
-        document.getElementById('callback-interest').value = 'карьера';
-        window.location.hash = 'contacts';
-      }
-
-      function clearSelectedVacancy() {
-        document.getElementById('vacancy-alert-box').classList.add('hidden');
-        document.getElementById('callback-interest').value = 'дорожное';
+        window.location.href = 'tel:+73522550476';
       }
 
       // Requisites table render
@@ -1135,13 +998,13 @@
               </button>
             </div>
             <div class="p-6 sm:p-8 overflow-y-auto space-y-4 text-xs sm:text-sm text-gray-600 leading-relaxed">
-              <p>Настоящая Политика конфиденциальности описывает правила сбора, хранения, обработки и защиты персональных данных пользователей сайта <strong>ООО «ЭЛЬБРУС»</strong> (ИНН ${requisites.inn}).</p>
+              <p>Настоящая Политика конфиденциальности описывает правила сбора, хранения, обработки и защиты данных пользователей сайта <strong>ООО «ЭЛЬБРУС»</strong> (ИНН ${requisites.inn}).</p>
               <h4 class="font-bold text-gray-900 uppercase text-[11px] tracking-wide pt-2">1. Сбор данных</h4>
-              <p>Мы обрабатываем только данные, которые вы добровольно оставляете нам через формы обратной связи (Ваше имя, Контактный телефон, Комментарий).</p>
+              <p>Мы не осуществляем автоматический сбор персональных данных без вашего ведома.</p>
               <h4 class="font-bold text-gray-900 uppercase text-[11px] tracking-wide pt-2">2. Цели использования</h4>
-              <p>Собранные персональные данные используются для оперативного созвона, согласования даты замера и выезда на дорожные объекты дорожного хозяйства.</p>
+              <p>Телефонная связь используется исключительно для консультирования клиентов и выезда на объекты дорожного хозяйства.</p>
               <h4 class="font-bold text-gray-900 uppercase text-[11px] tracking-wide pt-2">3. Безопасность</h4>
-              <p>ООО «ЭЛЬБРУС» гарантирует конфиденциальность и высокий уровень защиты ваших сведений.</p>
+              <p>ООО «ЭЛЬБРУС» гарантирует соблюдение законодательства Российской Федерации.</p>
             </div>
             <div class="p-5 bg-slate-50 border-t border-slate-100 flex justify-end">
               <button onclick="toggleModal(false)" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs uppercase tracking-wider py-2.5 px-6 rounded-lg transition-colors cursor-pointer flex items-center space-x-1.5">
@@ -1151,66 +1014,6 @@
             </div>
           </div>
         `);
-      }
-
-      // CRM Form Handler
-      function handleFormSubmit(event) {
-        event.preventDefault();
-        const errorBanner = document.getElementById('callback-error-banner');
-        errorBanner.classList.add('hidden');
-
-        const name = document.getElementById('callback-name').value.trim();
-        const phone = document.getElementById('callback-phone').value.trim();
-        const interest = document.getElementById('callback-interest').value;
-        const agree = document.getElementById('callback-agree').checked;
-
-        if(!name) {
-          showError('Укажите ваше имя');
-          return;
-        }
-        if(phone.length < 6) {
-          showError('Введите корректный номер телефона');
-          return;
-        }
-        if(!agree) {
-          showError('Необходимо ваше согласие с правилами конфиденциальности');
-          return;
-        }
-
-        const submitBtn = document.getElementById('callback-submit-btn');
-        const btnText = document.getElementById('submit-btn-text');
-        submitBtn.disabled = true;
-        btnText.innerText = 'ОТПРАВКА...';
-
-        // Simulation
-        setTimeout(() => {
-          submitBtn.disabled = false;
-          btnText.innerText = 'Отправить заявку';
-          
-          // Successful container replacements
-          const formContainer = document.getElementById('crm-form-container');
-          formContainer.innerHTML = `
-            <div class="text-center py-8 space-y-4 animate-fade-in">
-              <div class="w-16 h-16 bg-emerald-50 rounded-full flex items-center justify-center text-emerald-600 mx-auto border border-emerald-100">
-                <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m22 4-10 10.01-3-3"/></svg>
-              </div>
-              <h3 class="text-lg font-black text-gray-950">Заявка принята!</h3>
-              <p class="text-xs sm:text-sm text-gray-600 leading-relaxed max-w-md mx-auto">
-                Спасибо за обращение. Ответственный специалист компании ООО «ЭЛЬБРУС» свяжется с вами по указанному телефону в ближайшее время.
-              </p>
-              <button onclick="window.location.reload()" class="mt-4 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs uppercase tracking-wider px-6 py-2.5 rounded-lg transition-colors cursor-pointer">
-                ОТПРАВИТЬ ЕЩЁ РАЗ
-              </button>
-            </div>
-          `;
-        }, 1200);
-      }
-
-      function showError(msg) {
-        const banner = document.getElementById('callback-error-banner');
-        const text = document.getElementById('callback-error-message');
-        text.innerText = msg;
-        banner.classList.remove('hidden');
       }
 
       // 3. Initial loaders setup onload
