@@ -60,6 +60,7 @@
         <!-- Desktop Navlinks -->
         <nav class="hidden lg:flex items-center space-x-1 lg:space-x-2">
           <a href="#about" class="nav-link px-4 py-2 rounded-lg text-xs font-bold tracking-wider transition-all uppercase text-gray-700 hover:text-emerald-600 hover:bg-gray-50">КОМПАНИЯ</a>
+          <a href="#quality" class="nav-link px-4 py-2 rounded-lg text-xs font-bold tracking-wider transition-all uppercase text-gray-700 hover:text-emerald-600 hover:bg-gray-50">КОНТРОЛЬ КАЧЕСТВА</a>
           <a href="#objects" class="nav-link px-4 py-2 rounded-lg text-xs font-bold tracking-wider transition-all uppercase text-gray-700 hover:text-emerald-600 hover:bg-gray-50">ОБЪЕКТЫ</a>
           <a href="#news" class="nav-link px-4 py-2 rounded-lg text-xs font-bold tracking-wider transition-all uppercase text-gray-700 hover:text-emerald-600 hover:bg-gray-50">НОВОСТИ</a>
           <a href="#vacancies" class="nav-link px-4 py-2 rounded-lg text-xs font-bold tracking-wider transition-all uppercase text-gray-700 hover:text-emerald-600 hover:bg-gray-50">ВАКАНСИИ</a>
@@ -85,6 +86,7 @@
       <div id="mobile-menu" class="hidden lg:hidden absolute top-full left-0 w-full bg-white border-b border-gray-100 shadow-xl py-4 px-6 space-y-3 z-40 transition-all">
         <div class="flex flex-col space-y-2">
           <a href="#about" class="mobile-nav-link w-full text-left py-3 px-4 rounded-lg font-bold text-sm tracking-wide text-gray-700 hover:text-emerald-600 hover:bg-gray-50 block">КОМПАНИЯ</a>
+          <a href="#quality" class="mobile-nav-link w-full text-left py-3 px-4 rounded-lg font-bold text-sm tracking-wide text-gray-700 hover:text-emerald-600 hover:bg-gray-50 block">КОНТРОЛЬ КАЧЕСТВА</a>
           <a href="#objects" class="mobile-nav-link w-full text-left py-3 px-4 rounded-lg font-bold text-sm tracking-wide text-gray-700 hover:text-emerald-600 hover:bg-gray-50 block">ОБЪЕКТЫ</a>
           <a href="#news" class="mobile-nav-link w-full text-left py-3 px-4 rounded-lg font-bold text-sm tracking-wide text-gray-700 hover:text-emerald-600 hover:bg-gray-50 block">НОВОСТИ</a>
           <a href="#vacancies" class="mobile-nav-link w-full text-left py-3 px-4 rounded-lg font-bold text-sm tracking-wide text-gray-700 hover:text-emerald-600 hover:bg-gray-50 block">ВАКАНСИИ</a>
@@ -101,7 +103,7 @@
     </header>
 
     <!-- 2. Hero Slider Page -->
-    <section class="relative min-h-[580px] sm:min-h-[640px] flex items-center overflow-hidden bg-[#0b0f19]" id="hero">
+    <section class="relative min-h-[680px] sm:min-h-[720px] flex items-center overflow-hidden bg-[#0b0f19]" id="hero">
       <!-- Dynamic Background Slider Layers -->
       <div id="hero-bg-1" class="absolute inset-0 bg-cover bg-[position:80%_center] transition-opacity duration-1000 ease-in-out opacity-100 z-0" style="background-image: url('./images/hero-1.jpg');"></div>
       <div id="hero-bg-2" class="absolute inset-0 bg-cover bg-[position:80%_center] transition-opacity duration-1000 ease-in-out opacity-0 z-0" style="background-image: url('./images/hero-2.jpg');"></div>
@@ -109,7 +111,7 @@
       <!-- Gradient overlay to keep left text perfectly readable over images -->
       <div class="absolute inset-0 bg-gradient-to-r from-[#0b0f19]/95 via-[#0b0f19]/75 to-transparent z-1"></div>
 
-      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-24 w-full text-white">
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-20 sm:py-28 w-full text-white">
         <div class="max-w-2xl text-left flex flex-col items-start">
           <h1 class="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight leading-tight mb-6 text-white text-left">
             Асфальтирование под ключ в <span class="text-emerald-400">Курганской области</span>
@@ -120,11 +122,11 @@
           </p>
 
           <div class="flex flex-col sm:flex-row items-center justify-start space-y-4 sm:space-y-0 sm:space-x-5 w-full sm:w-auto">
-            <a href="#objects" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm uppercase tracking-wider px-8 py-4 rounded-xl transition-all shadow-lg shadow-emerald-600/20 active:scale-[0.98] text-center flex items-center justify-center space-x-2 w-full sm:w-auto">
+            <a href="#objects" class="bg-emerald-600/90 hover:bg-emerald-600 text-white font-bold text-sm uppercase tracking-wider px-8 py-4 rounded-xl transition-all shadow-lg shadow-emerald-600/20 active:scale-[0.98] text-center flex items-center justify-center space-x-2 w-full sm:w-auto">
               <span>НАШИ УСЛУГИ</span>
               <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
             </a>
-            <a href="#objects" class="bg-zinc-900/80 hover:bg-zinc-900 text-white border border-white/20 font-bold text-sm uppercase tracking-wider px-8 py-4 rounded-xl transition-all backdrop-blur-md active:scale-[0.98] text-center w-full sm:w-auto block">
+            <a href="#objects" class="bg-white/10 hover:bg-white/20 text-white border border-white/20 font-bold text-sm uppercase tracking-wider px-8 py-4 rounded-xl transition-all backdrop-blur-md active:scale-[0.98] text-center w-full sm:w-auto block">
               ПРИМЕРЫ РАБОТ
             </a>
           </div>
@@ -139,10 +141,7 @@
     <!-- 3. About Company Section -->
     <section class="py-24 bg-white" id="about">
       <div class="max-w-7xl mx-auto px-4 sm:px-6">
-        <div class="mb-16">
-          <div class="flex items-center space-x-2 text-emerald-600 font-mono text-xs uppercase tracking-widest font-bold mb-3">
-            <span>01 / ОРГАНИЗАЦИЯ</span>
-          </div>
+        <div class="mb-12">
           <h2 class="text-3xl sm:text-4xl font-black text-gray-950 tracking-tight">
             О компании ООО «ЭЛЬБРУС»
           </h2>
@@ -219,65 +218,62 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <div class="bg-emerald-50/50 rounded-xl p-5 border border-emerald-100/30 text-center animate-pulse">
-              <span class="text-xs text-emerald-800 font-bold uppercase tracking-wider block mb-1">
-                Штат организации
-              </span>
-              <span class="text-sm font-black text-gray-900">
-                Опытные инженеры, прорабы и рабочие строительных специальностей
-              </span>
+    <!-- 3.5 Internal Quality Control Section -->
+    <section class="py-20 bg-slate-50 border-t border-slate-100" id="quality">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="mb-12 text-center max-w-3xl mx-auto">
+          <h2 class="text-3xl sm:text-4xl font-black text-gray-950 tracking-tight">
+            Внутренний контроль качества
+          </h2>
+          <div class="w-16 h-1 bg-emerald-600 mt-4 mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Card 1 -->
+          <div class="group relative h-[300px] sm:h-[340px] rounded-2xl overflow-hidden shadow-md border border-slate-200/60 bg-slate-900">
+            <img src="images/card-lab.jpg" alt="Лабораторный контроль" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent flex flex-col justify-end p-6 sm:p-8">
+              <h3 class="text-white text-xl sm:text-2xl font-black">Лабораторный контроль</h3>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="group relative h-[300px] sm:h-[340px] rounded-2xl overflow-hidden shadow-md border border-slate-200/60 bg-slate-900">
+            <img src="./images/card-result.jpg" alt="Геодезический контроль" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent flex flex-col justify-end p-6 sm:p-8">
+              <h3 class="text-white text-xl sm:text-2xl font-black">Геодезический контроль</h3>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 4. Projects Section (Interactive Filtering) -->
-    <section class="py-24 bg-slate-50 border-y border-slate-100" id="objects">
+    <!-- 4. Projects Section -->
+    <section class="py-24 bg-white border-y border-slate-100" id="objects">
       <div class="max-w-7xl mx-auto px-4 sm:px-6">
-        <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-16">
-          <div>
-            <div class="flex items-center space-x-2 text-emerald-600 font-mono text-xs uppercase tracking-widest font-bold mb-3">
-              <span>02 / ГАЛЕРЕЯ РАБОТ</span>
-            </div>
-            <h2 class="text-3xl sm:text-4xl font-black text-gray-950 tracking-tight">
-              Выполненные объекты
-            </h2>
-            <div class="w-16 h-1 bg-emerald-600 mt-4 rounded-full"></div>
-          </div>
-
-          <!-- Tabs filter row -->
-          <div class="flex flex-wrap gap-2 mt-8 md:mt-0 bg-white p-1.5 rounded-xl border border-slate-200/60 shadow-sm">
-            <button onclick="filterProjects('все')" id="filter-все" class="project-filter-btn px-4.5 py-2.5 rounded-lg text-xs font-bold tracking-wider uppercase transition-all whitespace-nowrap bg-emerald-600 text-white shadow-sm">
-              Все объекты
-            </button>
-            <button onclick="filterProjects('дороги')" id="filter-дороги" class="project-filter-btn px-4.5 py-2.5 rounded-lg text-xs font-bold tracking-wider uppercase transition-all whitespace-nowrap text-gray-600 hover:text-emerald-600 hover:bg-slate-50">
-              Дорожные работы
-            </button>
-            <button onclick="filterProjects('земляные')" id="filter-земляные" class="project-filter-btn px-4.5 py-2.5 rounded-lg text-xs font-bold tracking-wider uppercase transition-all whitespace-nowrap text-gray-600 hover:text-emerald-600 hover:bg-slate-50">
-              Земляные работы
-            </button>
-            <button onclick="filterProjects('благоустройство')" id="filter-благоустройство" class="project-filter-btn px-4.5 py-2.5 rounded-lg text-xs font-bold tracking-wider uppercase transition-all whitespace-nowrap text-gray-600 hover:text-emerald-600 hover:bg-slate-50">
-              Благоустройство
-            </button>
-          </div>
+        <div class="mb-12">
+          <h2 class="text-3xl sm:text-4xl font-black text-gray-950 tracking-tight">
+            Выполненные объекты
+          </h2>
+          <div class="w-16 h-1 bg-emerald-600 mt-4 rounded-full"></div>
         </div>
 
         <!-- Dynamic Projects Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8" id="projects-grid">
           <!-- Dynamic injected items -->
         </div>
       </div>
     </section>
 
     <!-- 5. News Section -->
-    <section class="py-24 bg-white" id="news">
+    <section class="py-24 bg-slate-50" id="news">
       <div class="max-w-7xl mx-auto px-4 sm:px-6">
-        <div class="mb-16">
-          <div class="flex items-center space-x-2 text-emerald-600 font-mono text-xs uppercase tracking-widest font-bold mb-3">
-            <span>03 / СОБЫТИЯ И ОТЧЕТЫ</span>
-          </div>
+        <div class="mb-12">
           <h2 class="text-3xl sm:text-4xl font-black text-gray-950 tracking-tight">
             Новости организации
           </h2>
@@ -292,12 +288,9 @@
     </section>
 
     <!-- 6. Vacancies Accordion Section -->
-    <section class="py-24 bg-slate-50 border-y border-slate-100" id="vacancies">
+    <section class="py-24 bg-white border-y border-slate-100" id="vacancies">
       <div class="max-w-7xl mx-auto px-4 sm:px-6">
-        <div class="mb-16">
-          <div class="flex items-center space-x-2 text-emerald-600 font-mono text-xs uppercase tracking-widest font-bold mb-3">
-            <span>04 / КАРЬЕРА У НАС</span>
-          </div>
+        <div class="mb-12">
           <h2 class="text-3xl sm:text-4xl font-black text-gray-950 tracking-tight">
             Вакансии организации
           </h2>
@@ -315,12 +308,9 @@
     </section>
 
     <!-- 7. Legal and Requisites Info -->
-    <section class="py-24 bg-white" id="requisites">
+    <section class="py-24 bg-slate-50" id="requisites">
       <div class="max-w-7xl mx-auto px-4 sm:px-6">
-        <div class="mb-16">
-          <div class="flex items-center space-x-2 text-emerald-600 font-mono text-xs uppercase tracking-widest font-bold mb-3">
-            <span>05 / ПРАВОВАЯ ИНФОРМАЦИЯ</span>
-          </div>
+        <div class="mb-12">
           <h2 class="text-3xl sm:text-4xl font-black text-gray-950 tracking-tight">
             Реквизиты и учредительные данные
           </h2>
@@ -330,7 +320,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           <!-- Info panel with Download card trigger -->
           <div class="lg:col-span-4 space-y-6">
-            <div class="bg-slate-50 border border-slate-100/85 p-6 rounded-2xl relative overflow-hidden">
+            <div class="bg-white border border-slate-200/80 p-6 rounded-2xl relative overflow-hidden shadow-sm">
               <div class="absolute -right-16 -bottom-16 w-44 h-44 bg-emerald-50 rounded-full opacity-60 pointer-events-none"></div>
               <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 bg-emerald-100/60 text-emerald-800 text-[10px] font-bold uppercase tracking-wider rounded-lg mb-6">
                 <svg class="w-3.5 h-3.5 text-emerald-600" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 9.7a1 1 0 0 1-.68 0C7.5 20.5 4 18 4 13V6a1 1 0 0 1 .76-.97l8-2a1 1 0 0 1 .48 0l8 2A1 1 0 0 1 20 6v7z"/><path d="m9 12 2 2 4-4"/></svg>
@@ -354,7 +344,7 @@
           </div>
 
           <!-- Interactive table layout with copy features -->
-          <div class="lg:col-span-8 bg-slate-50/50 border border-slate-200/55 rounded-2xl p-6 sm:p-8 space-y-4">
+          <div class="lg:col-span-8 bg-white border border-slate-200/80 rounded-2xl p-6 sm:p-8 space-y-4 shadow-sm">
             <div class="flex items-center space-x-3 mb-6 pb-4 border-b border-slate-200/70">
               <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></svg>
               <h3 class="text-xs font-black text-gray-800 uppercase tracking-widest">
@@ -378,6 +368,7 @@
             <h4 class="text-sm font-black uppercase tracking-wider text-emerald-100">Компания</h4>
             <ul class="space-y-2.5 text-xs font-semibold text-white/90">
               <li><a href="#about" class="hover:text-emerald-200 transition-colors">О компании</a></li>
+              <li><a href="#quality" class="hover:text-emerald-200 transition-colors">Контроль качества</a></li>
               <li><a href="#vacancies" class="hover:text-emerald-200 transition-colors">Вакансии команды</a></li>
               <li><a href="#requisites" class="hover:text-emerald-200 transition-colors">Реквизиты ООО</a></li>
             </ul>
@@ -476,52 +467,44 @@
         employees: 26,
       };
 
+      // Real 4 projects from Site 1 database
       const projects = [
         {
-          id: 'p1',
-          title: 'Капитальный ремонт улицы Савельева в Кургане',
-          description: 'Полная замена дорожного полотна, укрепление грунтового основания, укладка двух слоев качественной асфальтобетонной смеси и установка бордюрного камня.',
-          category: 'дороги',
-          year: 2025,
-          location: 'г. Курган, ул. Савельева',
+          id: 'port-1',
+          title: 'Ремонт улично-дорожной сети по ул. Гоголя и ул. К. Маркса',
+          description: 'Фрезерование изношенного слоя, устройство выравнивающего слоя из мелкозернистого асфальтобетона, замена бортового камня и герметизация швов.',
+          category: 'Асфальтирование',
+          year: '2025',
+          location: 'г. Курган',
           imageUrl: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=800',
         },
         {
-          id: 'p2',
-          title: 'Благоустройство прилегающей территории ЖК «Центральный»',
-          description: 'Устройство асфальтированных проездов, тротуарных дорожек из плитки, парковочных зон и озеленение газонов.',
-          category: 'благоустройство',
-          year: 2025,
-          location: 'г. Курган, центральный район',
+          id: 'port-2',
+          title: 'Капитальный ремонт проездов по ул. Станционной',
+          description: 'Устройство щебеночного основания фракции 20-40, проливка битумной эмульсией, укладка двух слоев горячего асфальтобетона, устройство дождеприемных колодцев.',
+          category: 'Строительство дорог',
+          year: '2025',
+          location: 'г. Курган',
           imageUrl: 'https://images.unsplash.com/photo-1590487988256-9ed24133863e?auto=format&fit=crop&q=80&w=800',
         },
         {
-          id: 'p3',
-          title: 'Земляные работы под складской комплекс Лого-Парк',
-          description: 'Разработка котлована объемом более 15 000 м³, перемещение и уплотнение грунта, подготовка надежной песчано-гравийной подушки под фундамент.',
-          category: 'земляные',
-          year: 2024,
-          location: 'Курганская область, Восточная промзона',
+          id: 'port-3',
+          title: 'Благоустройство пешеходной зоны и сквера',
+          description: 'Выравнивание ландшафта, геодезическая разбивка, укладка вибропрессованной тротуарной плитки, установка садового бордюра и устройство газонов.',
+          category: 'Благоустройство территорий',
+          year: '2024',
+          location: 'г. Шадринск',
+          imageUrl: 'https://images.unsplash.com/photo-1584467541268-b040f83be3fd?auto=format&fit=crop&q=80&w=800',
+        },
+        {
+          id: 'port-4',
+          title: 'Разработка котлована и выемка грунта под промплощадку',
+          description: 'Выемка грунта экскаваторами объемом 32 000 м³, послойное уплотнение тяжелыми катками, вывоз и официальная утилизация на полигоне.',
+          category: 'Земляные работы',
+          year: '2024',
+          location: 'Промзона г. Курган',
           imageUrl: 'https://images.unsplash.com/photo-1515162305285-0293e4767cc2?auto=format&fit=crop&q=80&w=800',
-        },
-        {
-          id: 'p4',
-          title: 'Ремонт региональной автодороги Курган — Шадринск',
-          description: 'Фрезерование изношенного покрытия, устройство выравнивающего слоя из мелкозернистого асфальтобетона, укрепление обочин щебнем.',
-          category: 'дороги',
-          year: 2024,
-          location: 'Трасса Курган — Шадринск, км 45-52',
-          imageUrl: 'https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&q=80&w=800',
-        },
-        {
-          id: 'p5',
-          title: 'Асфальтирование территории промышленной зоны автоцентра',
-          description: 'Укладка износостойкого покрытия для движения грузовой и специализированной техники на площади более 4 500 кв. метров.',
-          category: 'дороги',
-          year: 2023,
-          location: 'г. Курган, пр. Конституции',
-          imageUrl: 'https://images.unsplash.com/photo-1519074002996-a69e7ac46a42?auto=format&fit=crop&q=80&w=800',
-        },
+        }
       ];
 
       const news = [
@@ -639,7 +622,7 @@
         }
 
         // Section Highlighters
-        const sections = ['hero', 'about', 'objects', 'news', 'vacancies', 'requisites', 'footer'];
+        const sections = ['hero', 'about', 'quality', 'objects', 'news', 'vacancies', 'requisites', 'footer'];
         const scrollPosition = window.scrollY + 120;
         sections.forEach(sec => {
           const el = document.getElementById(sec);
@@ -666,13 +649,11 @@
       });
 
       // Projects renderer
-      function renderProjects(filteredCategory = 'все') {
+      function renderProjects() {
         const grid = document.getElementById('projects-grid');
-        const items = filteredCategory === 'все' ? projects : projects.filter(p => p.category === filteredCategory);
-        
-        grid.innerHTML = items.map(project => `
-          <div onclick="openProjectModal(${projects.indexOf(project)})" class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-lg hover:border-slate-200/80 transition-all duration-300 flex flex-col group cursor-pointer text-left">
-            <div class="relative aspect-[4/3] overflow-hidden bg-slate-200">
+        grid.innerHTML = projects.map((project, idx) => `
+          <div onclick="openProjectModal(${idx})" class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-lg hover:border-slate-200/80 transition-all duration-300 flex flex-col group cursor-pointer text-left">
+            <div class="relative aspect-[16/10] overflow-hidden bg-slate-200">
               <img src="${project.imageUrl}" alt="${project.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               <div class="absolute inset-0 bg-gradient-to-t from-gray-950/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                 <span class="text-white font-semibold text-xs flex items-center space-x-1 uppercase tracking-wider backdrop-blur-sm bg-black/35 py-1 px-3 rounded-full">
@@ -695,17 +676,6 @@
             </div>
           </div>
         `).join('');
-      }
-
-      function filterProjects(cat) {
-        document.querySelectorAll('.project-filter-btn').forEach(btn => {
-          btn.classList.remove('bg-emerald-600', 'text-white', 'shadow-sm');
-          btn.classList.add('text-gray-600', 'hover:text-emerald-600', 'hover:bg-slate-50');
-        });
-        const currentBtn = document.getElementById(`filter-${cat}`);
-        currentBtn.classList.remove('text-gray-600', 'hover:text-emerald-600', 'hover:bg-slate-50');
-        currentBtn.classList.add('bg-emerald-600', 'text-white', 'shadow-sm');
-        renderProjects(cat);
       }
 
       // News Render
@@ -937,10 +907,6 @@
                   </div>
                 </div>
               </div>
-              <div class="bg-emerald-50/50 p-4 rounded-xl border border-emerald-100 text-xs text-emerald-800 flex items-center space-x-2.5">
-                <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>
-                <span>Объект успешно прошёл государственную приёмку, соответствует СНиП и ГОСТ.</span>
-              </div>
             </div>
           </div>
         `);
@@ -1017,7 +983,7 @@
 
       // 3. Initial loaders setup onload
       window.onload = () => {
-        renderProjects('все');
+        renderProjects();
         renderNews();
         renderVacancies();
         renderRequisitesTable();
