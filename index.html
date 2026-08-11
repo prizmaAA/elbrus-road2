@@ -95,29 +95,30 @@
       </div>
     </header>
 
-    <!-- 2. Hero Section (Укороченная пропорция мобильного кадра + плавный переход + кнопки внизу фото) -->
-    <section class="relative bg-[#0b0f19] lg:min-h-[720px] sm:lg:min-h-[800px] overflow-hidden" id="hero">
-      <!-- Масштаб фото скорректирован для отображения техники -->
-      <div id="hero-bg-1" class="absolute inset-0 bg-[length:120%_auto] sm:bg-cover bg-[position:center_bottom] lg:bg-[position:80%_center] transition-opacity duration-1000 ease-in-out opacity-100 z-0" style="background-image: url('./images/hero-1.jpg');"></div>
-      <div id="hero-bg-2" class="absolute inset-0 bg-[length:120%_auto] sm:bg-cover bg-[position:center_bottom] lg:bg-[position:80%_center] transition-opacity duration-1000 ease-in-out opacity-0 z-0" style="background-image: url('./images/hero-2.jpg');"></div>
-      <div id="hero-bg-3" class="absolute inset-0 bg-[length:120%_auto] sm:bg-cover bg-[position:center_bottom] lg:bg-[position:80%_center] transition-opacity duration-1000 ease-in-out opacity-0 z-0" style="background-image: url('./images/kamaz-truck.jpg');"></div>
+    <!-- 2. Hero Section -->
+    <section class="relative bg-[#0b0f19] min-h-[500px] sm:min-h-[650px] lg:min-h-[800px] flex flex-col justify-between overflow-hidden" id="hero">
+      <!-- Фото масштабировано и опущено чуть ниже для обзора техники -->
+      <div id="hero-bg-1" class="absolute inset-0 bg-[length:115%_auto] sm:bg-cover bg-[position:center_90%] lg:bg-[position:80%_center] transition-opacity duration-1000 ease-in-out opacity-100 z-0" style="background-image: url('./images/hero-1.jpg');"></div>
+      <div id="hero-bg-2" class="absolute inset-0 bg-[length:115%_auto] sm:bg-cover bg-[position:center_90%] lg:bg-[position:80%_center] transition-opacity duration-1000 ease-in-out opacity-0 z-0" style="background-image: url('./images/hero-2.jpg');"></div>
+      <div id="hero-bg-3" class="absolute inset-0 bg-[length:115%_auto] sm:bg-cover bg-[position:center_90%] lg:bg-[position:80%_center] transition-opacity duration-1000 ease-in-out opacity-0 z-0" style="background-image: url('./images/kamaz-truck.jpg');"></div>
 
-      <!-- Градиентное слияние: чистый тёмный верх (0-25%), мягкий переход с подзаголовком (25-60%), фото внизу -->
-      <div class="absolute inset-0 bg-gradient-to-b lg:bg-gradient-to-r from-[#0b0f19] via-[#0b0f19]/90 via-30% to-[#0b0f19]/35 lg:from-[#0b0f19]/95 lg:via-[#0b0f19]/75 lg:to-transparent z-1"></div>
+      <!-- Мягкое слияние: чистый тёмный верх (0-20%), постепенный уход градиента через подзаголовок (20-55%), открытое фото внизу -->
+      <div class="absolute inset-0 bg-gradient-to-b lg:bg-gradient-to-r from-[#0b0f19] via-[#0b0f19]/85 via-[25%] to-[#0b0f19]/20 lg:from-[#0b0f19]/95 lg:via-[#0b0f19]/75 lg:to-transparent z-1"></div>
 
-      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pt-4 pb-6 lg:py-36 w-full text-white">
-        <div class="max-w-2xl text-left flex flex-col items-start">
-          <!-- Заголовок на тёмном фоне вверху -->
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pt-4 pb-6 lg:py-36 w-full text-white flex-1 flex flex-col justify-between">
+        <div class="max-w-2xl text-left flex flex-col items-start pt-1 sm:pt-0">
           <h1 class="text-2xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight mb-2 sm:mb-4 text-white text-left">
             Асфальтирование под ключ<br><span class="text-emerald-400">в Курганской области</span>
           </h1>
 
-          <!-- Подзаголовок на зоне перехода градиента -->
-          <p class="text-xs sm:text-lg lg:text-xl text-gray-200 font-medium leading-relaxed mb-10 sm:mb-14 lg:mb-10 max-w-xl text-left drop-shadow-sm">
+          <!-- Увеличенный отступ mb-16/mb-20 разрывает связь с кнопками и дает много воздуха -->
+          <p class="text-xs sm:text-lg lg:text-xl text-gray-200 font-medium leading-relaxed mb-16 sm:mb-20 lg:mb-10 max-w-xl text-left drop-shadow-sm">
             Строительство и капитальный ремонт дорог, асфальтирование и благоустройство территорий по стандартам ГОСТ. Собственный парк техники.
           </p>
+        </div>
 
-          <!-- Кнопки в самом низу поверх фото -->
+        <!-- Кнопки расположены внизу кадра поверх фотографии -->
+        <div class="pb-2 sm:pb-6 lg:pb-0 w-full max-w-2xl">
           <div class="flex flex-row items-center justify-start space-x-2.5 sm:space-x-5 w-full sm:w-auto">
             <a href="#services" class="w-1/2 sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-[10px] sm:text-xs uppercase tracking-wider py-2.5 sm:px-8 sm:py-4 rounded-lg transition-all shadow-md active:scale-[0.98] text-center flex items-center justify-center space-x-1.5 whitespace-nowrap">
               <span>НАШИ УСЛУГИ</span>
@@ -661,7 +662,7 @@
         link.addEventListener('click', () => mobMenu.classList.add('hidden'));
       });
 
-      // Projects renderer (Единый заголовок с локацией единым шрифтом/цветом)
+      // Projects renderer
       function renderProjects() {
         const grid = document.getElementById('projects-grid');
         grid.innerHTML = projects.map((project, idx) => `
